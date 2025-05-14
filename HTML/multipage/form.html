@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="mailto:kaushalkunwar21@gmail.com?subject=Hi" enctype="text/plain" method="post">
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter Full Name" required>
+        </p>
+       <p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </p>
+            <h3>Select your gender</h3>
+            <label for="male">Male</label><input type="radio" name="gender" value="male" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="female" value="female" id="female">
+       </p>
+       <p>
+        <h3>Hobbies</h3>
+            <label for="dance">Dancing</label>
+            <input type="checkbox" name="dance" value="dance" id="dance">
+            <label for="singing">Singing</label>
+            <input type="checkbox" name="singing" value="singing" id="singing">
+       </p>
+       <p>
+            <h3>Select your country</h3>
+            <select name="country" id="country">
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="Srilanka">Srilanka</option>
+
+                <optgroup label="Asian Country">
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Srilanka">Srilanka</option>
+                </optgroup>
+            </select>
+       </p>
+       <p>
+            <h3>Comment</h3>
+            <label for="comment">Comment</label>
+            <input type="textarea" name="comment" id="comment">
+       </p>
+       <button type="submit">Submit</button>
+       <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
