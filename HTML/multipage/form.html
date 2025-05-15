@@ -6,7 +6,7 @@
     <title>Forms</title>
 </head>
 <body>
-    <h1>Contact Us</h1>
+    <h1>Contact Me</h1>
     <form action="mailto:kaushalkunwar21@gmail.com?subject=Hi" enctype="text/plain" method="post">
         <p>
             <label for="username">Username</label>
@@ -15,12 +15,12 @@
        <p>
         <p>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="Enter email">
         </p>
             <h3>Select your gender</h3>
             <label for="male">Male</label><input type="radio" name="gender" value="male" id="male">
             <label for="female">Female</label>
-            <input type="radio" name="female" value="female" id="female">
+            <input type="radio" name="gender" value="female" id="female">
        </p>
        <p>
         <h3>Hobbies</h3>
@@ -44,8 +44,8 @@
        </p>
        <p>
             <h3>Comment</h3>
-            <label for="comment">Comment</label>
-            <input type="textarea" name="comment" id="comment">
+            <!-- <label for="comment">Comment</label> -->
+            <textarea name="comment" id="comment" rows="4" cols="30"></textarea>
        </p>
        <button type="submit">Submit</button>
        <button type="reset">Reset</button>
