@@ -4,8 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Css</title>
+    <style>
+     
+        p{
+            /* color: rgb(100,200,50);
+            color: rgba(38, 34, 172, 0.7); */
+            color: #F49BAB;
+        }
+        .box1 h1, .box1 h3{
+            color: red;
+        }
+        .box2{
+            color: purple;
+        }
+        #head{
+            color: yellowgreen;
+        }
+        .box>h1{
+            color: red;
+        }
+        .c-box>h1:hover{
+            color: purple;
+            /* background-color: red; */
+        }
+        /* nth-child for lists */
+        li:nth-child(odd){
+            color: red;
+        }
+        img[alt='cactus']{
+            height: 500px;
+        }
+        /* text's styling */
+        p{
+            text-align: center; 
+            text-decoration: underline 2px red;
+            text-underline-offset: 5px;
+            text-transform: capitalize;
+        }
+        /* h1{
+            /* text-shadow: 10px 10px 1px red; */ */
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
+    <h1>Hello ji</h1>
+    <div id="head">
+        <h1>Web Logo</h1>
+    </div>
+
+    <div class="box1">
+        <h1>hello jee</h1>
+        <h3>k xa ji?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Neque in quisquam voluptate quo culpa et assumenda labore a, officiis libero!</p>
+    </div>
+    <hr>
+    <div class="box2">
+        <h1 style="color: chocolate;">hello Tee</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Neque in quisquam voluptate quo culpa et assumenda labore a, officiis libero!</p>
+    </div>
     
+    <div class="box">
+        <h1>hello jee</h1>
+        <div class="c-box">
+            <h1>Hi ji</h1>
+            <div>
+                <h1>whats up ji?</h1>
+            </div>
+        </div>
+    </div>
+  
+    <!-- lists -->
+     <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+     </ol>
+
+     <video src="https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4" controls></video>
+
+     <img src="https://images.unsplash.com/photo-1743698560827-759a2333f634?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="cactus">
+
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, cupiditate.</p>
 </body>
 </html>
